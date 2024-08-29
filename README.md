@@ -9,10 +9,9 @@ Built for my partner, who needs to look up the effective types for her Pokemon G
 - React Query
 
 ### Task List
-- [ ] Refactor TSX markup into seperate components
-- [ ] Add onClick styling to Type icons
-- [ ] Reduce grid widths on larger devices for easier viewing
-- [ ] Change font-family and bold keywords
+- [x] Refactor TSX markup into seperate components
+- [x] Add onClick styling to Type icons
+- [x] Reduce grid widths on larger devices for easier viewing
 - [ ] Deploy to Vercel
 - [ ] Set link on Git Repo
 

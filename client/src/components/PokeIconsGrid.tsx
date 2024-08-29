@@ -6,7 +6,7 @@ interface PokeIconsGridProps {
 
 export const PokeIconsGrid = ({ handleClick }: PokeIconsGridProps) => {
   return (
-    <div className="grid grid-cols-4 grid-rows-3  gap-6 mt-10 p-10 sm:justify-center place-content-center">
+    <div className="grid grid-cols-4 grid-rows-3 sm:max-w-2xl mx-auto gap-8 mt-10 p-10 sm:justify-center place-content-center">
       {pokemonType.map((type, index) => (
         <div
           key={index}

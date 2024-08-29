@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { fetchPokemonType } from "./lib/hooks/hooks";
 import { useQuery } from "@tanstack/react-query";
-import { Header, PokeIconsGrid, PokeEffectInfo } from "./components";
+import { Header, PokeIconsGrid, PokeEffectInfo, Footer } from "./components";
 
 const useFetchType = (type: string) => {
   const { data, error, isLoading } = useQuery({
@@ -25,7 +25,7 @@ const App = () => {
   if (error) return <div>An error was found.</div>;
 
   return (
-    <main className="min-h-screen bg-zinc-900 pb-10">
+    <main className="min-h-screen w-full bg-zinc-900 pb-10">
       <Header />
       <PokeIconsGrid handleClick={handleClick} />
       <PokeEffectInfo
@@ -39,6 +39,7 @@ const App = () => {
         isLoading={isLoading}
         data={data}
       />
+      <Footer />
     </main>
   );
 };
